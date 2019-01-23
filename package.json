@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "prod": "ng build --prod",
+    "prod-api": "ng build --prod --outputPath ../api/htdocs/",
     "universal": "ng run cinemapp:server --configuration production --outputPath ../universal --deleteOutputPath false",
     "ng": "ng",
     "test": "ng test",

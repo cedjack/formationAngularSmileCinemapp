@@ -12,6 +12,7 @@ import { AccountModule } from './account/account.module';
 import { OopsModule } from './oops/oops.module';
 import { AppComponent } from './app.component';
 import { AuthInterceptor } from './core/auth/auth.interceptor';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,6 +25,7 @@ import { AuthInterceptor } from './core/auth/auth.interceptor';
     AccountModule,
     OopsModule,
     AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   bootstrap: [AppComponent],
   providers: [
